@@ -124,6 +124,13 @@
 
     nav a:hover .icon { opacity: 1; }
 
+    .nav-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 4px 0;
+    }
+
     /* ── MAIN ── */
     main {
       padding: 72px 60px;
@@ -345,6 +352,22 @@
     </div>
 
     <nav>
+      <!-- Scroll links -->
+      <a href="#cinematic">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polygon points="5 3 19 12 5 21 5 3" stroke="none" fill="currentColor"/>
+        </svg>
+        Cinematic Reel
+      </a>
+      <a href="#character">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polygon points="5 3 19 12 5 21 5 3" stroke="none" fill="currentColor"/>
+        </svg>
+        Character Reel
+      </a>
+
+      <div class="nav-divider"></div>
+
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/markhlee11/" target="_blank" rel="noopener">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -361,7 +384,6 @@
         </svg>
         markhlee11&#64;gmail.com
       </a>
-
     </nav>
   </header>
 
@@ -378,6 +400,7 @@
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/JuXb0n3AgeA" allowfullscreen></iframe>
         </div>
+      </div>
     </section>
 
     <!-- ── CHARACTER ANIMATION ── -->
@@ -391,6 +414,7 @@
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/G9cuVtTUwpE" allowfullscreen></iframe>
         </div>
+      </div>
     </section>
 
     <div class="details-grid">
@@ -410,8 +434,8 @@
           <a href="https://www.linkedin.com/in/markhlee11/" target="_blank" rel="noopener">/in/markhlee11</a>
         </p>
       </div>
-
     </div>
+
   </main>
 
   <footer>
