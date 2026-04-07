@@ -94,6 +94,35 @@
       cursor: default;
     }
 
+    .header-scroll-links {
+      display: flex;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .header-scroll-links a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color 0.25s ease;
+    }
+
+    .header-scroll-links a:hover { color: var(--accent); }
+
+    .header-scroll-links a .icon {
+      width: 12px;
+      height: 12px;
+      opacity: 0.5;
+      transition: opacity 0.25s;
+    }
+
+    .header-scroll-links a:hover .icon { opacity: 1; }
+
     /* ── NAV LINKS ── */
     nav {
       display: flex;
@@ -125,13 +154,6 @@
     }
 
     nav a:hover .icon { opacity: 1; }
-
-    .nav-divider {
-      width: 100%;
-      height: 1px;
-      background: var(--border);
-      margin: 4px 0;
-    }
 
     /* ── MAIN ── */
     main {
@@ -352,25 +374,23 @@
       <h1>Mark <em>Lee</em></h1>
       <p class="discipline">Senior CG Animator</p>
       <p class="intro">Film · Games · Commercials</p>
+      <div class="header-scroll-links">
+        <a href="#cinematic">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="5 3 19 12 5 21 5 3" stroke="none" fill="currentColor"/>
+          </svg>
+          Cinematic Reel
+        </a>
+        <a href="#character">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="5 3 19 12 5 21 5 3" stroke="none" fill="currentColor"/>
+          </svg>
+          Keyframe Reel
+        </a>
+      </div>
     </div>
 
     <nav>
-      <!-- Scroll links -->
-      <a href="#cinematic">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <polygon points="5 3 19 12 5 21 5 3" stroke="none" fill="currentColor"/>
-        </svg>
-        Cinematic Reel
-      </a>
-      <a href="#character">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <polygon points="5 3 19 12 5 21 5 3" stroke="none" fill="currentColor"/>
-        </svg>
-        Character Reel
-      </a>
-
-      <div class="nav-divider"></div>
-
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/markhlee11/" target="_blank" rel="noopener">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -409,7 +429,7 @@
     <!-- ── CHARACTER ANIMATION ── -->
     <section class="reel-section" id="character" style="margin-top: 64px;">
       <div class="section-header">
-        <span class="section-label">Character Animation</span>
+        <span class="section-label">Keyframe Animation</span>
         <div class="section-line"></div>
       </div>
 
